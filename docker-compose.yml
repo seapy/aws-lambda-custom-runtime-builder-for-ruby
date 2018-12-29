@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ruby:
+    build:
+      context: .
+    image: aws-lambda-custom-runtime-builder-for-ruby
+    command: /build.sh 2.6.0
+    volumes:
+      - ./build:/tmp/build
+      - ./runtime:/tmp/runtime
