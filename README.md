@@ -10,7 +10,7 @@ This is for newer ruby version or old version.
 
 ```
 $ docker-compose build
-$ docker-compose up
+$ docker-compose run ruby
 ```
 
 execution result will make `build/runtime.zip`
