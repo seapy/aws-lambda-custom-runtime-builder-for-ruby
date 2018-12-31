@@ -1,10 +1,14 @@
 # aws lambda custom runtime builder for ruby
 
-This is for newer ruby version or old version.
+AWS Lambda custom runtime for Ruby. For newer ruby version or old version.
 
 ## Shared lambda layer
 
+If you want use Ruby 2.6.0 right now, here is Ruby 2.6.0 custom runtime in Lambda Layer.
 
+`arn:aws:lambda:<region>:350831304703:layer:ruby-260:1`
+
+Change the string `<region>` to your region. for example if you are Seoul region, ARN is `arn:aws:lambda:ap-northeast-2:350831304703:layer:ruby-260:1`
 
 ## Build
 
@@ -14,16 +18,6 @@ $ docker-compose run ruby
 ```
 
 execution result will make `build/runtime.zip`
-
-## Create Lambda Layer
-
-```
-$ ./upload.sh
-```
-
-or 
-
-Upload `build/runtime.zip` use aws console webpage.
 
 ## Use another version of ruby
 
